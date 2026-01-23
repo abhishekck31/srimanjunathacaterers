@@ -1,5 +1,6 @@
 'use client';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -8,10 +9,20 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
                     {/* Brand */}
                     <div>
-                        <h3 className="text-2xl font-serif font-bold mb-6 tracking-wide">
-                            Sri Manjunatha <br />
-                            <span className="text-brand-gold">Caterers</span>
-                        </h3>
+                        <div className="flex items-center gap-4 mb-6">
+                            <div className="relative w-28 h-28">
+                                <Image
+                                    src="/logo.png"
+                                    alt="Sri Manjunatha Caterers Logo"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <h3 className="text-2xl font-serif font-bold tracking-wide">
+                                Sri Manjunatha <br />
+                                <span className="text-brand-gold">Caterers</span>
+                            </h3>
+                        </div>
                         <p className="text-gray-400 mb-6 leading-relaxed text-sm">
                             PKS Group Catering. <br />
                             Serving authentic vegetarian cuisine with love, tradition, and devotion for generations.
@@ -40,9 +51,8 @@ export default function Footer() {
                     {/* Contact Short */}
                     <div>
                         <h4 className="font-bold text-lg mb-6 text-brand-gold font-serif">Contact Us</h4>
-                        <p className="text-gray-400 mb-4 text-sm">No. 123, Temple Road, Jayanagar,<br />Bengaluru - 560041</p>
-                        <p className="text-gray-400 mb-2 text-sm">Ph: +91 99000 00000</p>
-                        <p className="text-gray-400 text-sm">Email: contact@smc.com</p>
+                        <p className="text-gray-400 mb-4 text-sm">2nd cross MHR layout, kirloskar layout,<br />Hesargatta Main Road, Bangalore 560073</p>
+                        <p className="text-gray-600 mb-2 text-sm">Ph: +91 78992 74797</p>
                     </div>
                 </div>
 

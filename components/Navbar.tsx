@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
@@ -33,8 +34,19 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-6 flex justify-between items-center text-white">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-serif font-bold tracking-wide">
-                    Sri Manjunatha <span className="text-brand-gold">Caterers</span>
+                <Link href="/" className="flex items-center gap-3 group">
+                    <div className="relative w-16 h-16 md:w-20 md:h-20 transition-transform duration-300 group-hover:scale-105">
+                        <Image
+                            src="/logo.png"
+                            alt="Sri Manjunatha Caterers Logo"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
+                    <span className="text-xl md:text-2xl font-serif font-bold tracking-wide">
+                        Sri Manjunatha <span className="text-brand-gold">Caterers</span>
+                    </span>
                 </Link>
 
                 {/* Desktop Links */}

@@ -23,8 +23,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h5 className="font-bold text-brand-maroon-dark text-lg mb-1">Call Us</h5>
-                                    <p className="text-gray-600 group-hover:text-brand-maroon transition-colors">+91 99000 00000</p>
-                                    <p className="text-gray-600 group-hover:text-brand-maroon transition-colors">+91 98000 00000</p>
+                                    <p className="text-gray-600 group-hover:text-brand-maroon transition-colors">+91 78992 74797</p>
                                 </div>
                             </div>
 
@@ -44,7 +43,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h5 className="font-bold text-brand-maroon-dark text-lg mb-1">Visit Us</h5>
-                                    <p className="text-gray-600">No. 123, Temple Road, <br />Jayanagar, Bengaluru - 560041</p>
+                                    <p className="text-gray-600">2nd cross MHR layout, kirloskar layout, <br />Hesargatta Main Road, Bangalore 560073</p>
                                 </div>
                             </div>
                         </div>
