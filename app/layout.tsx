@@ -18,6 +18,9 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Sri Manjunatha Caterers - PKS Group | Premium Pure Veg Catering",
   description: "Traditional South Indian & Karnataka-style vegetarian catering for weddings, engagements, and auspicious occasions. Experience taste, tradition, and trust.",
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 import Navbar from "@/components/Navbar";
